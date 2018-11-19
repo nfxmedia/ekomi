@@ -1,0 +1,504 @@
+#detail #detailinfo #comments .no_border {
+	border-bottom: 0 none;
+}
+
+#detail #detailinfo #comments .answer {
+	padding: 8px 12px;
+	font-style: italic;
+	margin: 0 0 0 25px;
+	border: 1px dashed;
+}
+#detail #detailinfo #comments .answer .left_container {
+	width: 100px;
+	font-style: normal;
+}
+#detail #detailinfo #comments .answer .right_container {
+	width: 332px
+}
+
+/** colors.css */
+#detail #detailinfo #comments .answer {
+	border-color: #c7c7c7;
+	color: #999;
+}
+.voteButton {
+	font-weight: bold;
+	background: #fd9a2f;
+	width: 45px;
+	height: 26px;
+	border: 1px solid #fd8118;
+	color: #FFFFFF;
+	margin-left: 18px;
+}
+
+.voteButton_no, .voteButton_yes {
+	font-weight: bold;
+	width: 58px;
+	height: 27px;
+	margin-left: 5px;
+	border: none;
+	padding-bottom: 3px;
+	cursor: pointer;
+}
+
+.voteButton_no {
+	background: url("../images/nein.png") no-repeat scroll top center;
+	color: #e1540f;
+	padding-left: 35px;
+	width: 65px;
+}
+
+.voteButton_yes {
+	background: url("../images/ja.png") no-repeat scroll top center;
+	color: #299f0b;
+	padding-left: 20px;
+}
+.ratingArea {
+	padding: 10px;
+}
+#detail #detailinfo #comments form.voteArea {
+	padding: 10px;
+	font-weight: bold;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #FFFFFF;
+	border: none;
+}
+.thanksArea {
+	background-color: #cdeac9;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+div.vsRatingArea {
+	/*border: 1px solid #CCCCCC;*/
+}
+div.vsRatingArea div {
+	/*border: 1px solid red;*/
+}
+div.vsRatingAreaHeading {
+	-background-color: #eaeaea;
+	background-color: #e1540f;
+	color: #ffffff;
+	height: 29px;
+}
+div.vsRatingAreaHeading div {
+	float: left;
+	width: 275px;
+	height: 29px;
+	text-align: center;
+	padding-top: 6px;
+	font-weight: bold;
+}
+div.vsRatingAreaContent {
+	-background: url("/engine/Shopware/Plugins/Local/Frontend/Vote4Ratings/background.gif") no-repeat scroll top center;
+	background: url("../images/background.jpg") repeat-y scroll top center;
+	min-height: 250px;
+	border-left: 1px dashed #a9a9a9;
+	border-right: 1px dashed #a9a9a9;
+	border-bottom: 1px dashed #a9a9a9;
+}
+div.vsRatingAreaContent div.reviewBlock1 {
+	width: 265px;
+	float: left;
+	padding: 5px;
+}
+div.vsRatingAreaContent div.reviewBlock2 {
+	width: 265px;
+	float: right;
+	padding: 5px;
+}
+div.vsRatingAreaContent .name {
+	color: #e1540f;
+	font-weight: bold;
+}
+div.vsRatingAreaContent .stat {
+	font-size: 80%;
+	font-weight: bold;
+	margin-left: 10px;
+}
+div.vsRatingAreaContent .author {
+	float: right;
+	clear: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 250px;
+}
+div.vsRatingAreaContent .text {
+	padding-top: 35px;
+	padding-left: 25px;
+	width: 220px;
+}
+/*-----------------------------------------------------*/
+.inner_tabs {
+	background: none repeat scroll 0 0 #E4F4C6;
+	border: 1px solid #79AB17;
+	border-radius: 6px 6px 6px 6px;
+	float: left;
+	margin-top: 0;
+	min-height: 373px;
+	width: 712px;
+}
+.inner_tabs #comments .overview_rating strong, .inner_tabs #comments .overview_rating .star, .inner_tabs #comments .overview_rating span {
+	float: left;
+	margin-right: 5px;
+}
+.inner_tabs #comments .overview_rating span {
+	margin-right: 0;
+}
+div.comment_block .date, div.comment_block .author, div.comment_block .product {
+	display: block;
+}
+div.comment_block .product {
+	margin-top: 6px;
+}
+#detailinfo #comments form {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color;
+	border-image: none;
+	border-right: 1px solid;
+	border-style: none solid solid;
+	border-width: 0 1px 1px;
+	padding: 10px;
+}
+#detailinfo #comments form p {
+	margin: 0 0 0.8em;
+}
+#detailinfo #comments form h4 {
+	font-weight: 700;
+}
+#detailinfo #comments fieldset input {
+	width: 240px;
+}
+#detailinfo #comments form textarea {
+	width: 425px;
+}
+#detailinfo #comments .left_container {
+	float: left;
+	width: 180px;
+}
+#detailinfo #comments .right_container {
+	float: left;
+	width: 490px;
+}
+#detailinfo #comments .right_container h3 {
+	margin-top: 0;
+}
+#detailinfo #comments .comment_block {
+	border-bottom: 1px solid #D2DDB3;
+	padding-top: 10px;
+}
+#detailinfo #comments .last {
+	border-bottom: 0 none;
+}
+#detailinfo #comments .left_overview_container {
+	float: left;
+	padding-top: 10px;
+	width: 200px;
+}
+#detailinfo #comments .center_overview_container {
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 175px;
+}
+#detailinfo #comments .right_overview_container {
+	float: left;
+	margin-left: 17px;
+	margin-top: 15px;
+	width: 200px;
+}
+#detailinfo #comments .right_overview_container ul {
+	border-left: 1px solid #B5B5B5;
+	list-style: none outside none;
+	margin: 27px 0 0 20px;
+	padding-top: 3px;
+}
+#detailinfo #comments .right_overview_container li {
+	background: url("../images/bullet-green.gif") no-repeat scroll 0 6px transparent;
+	color: #000000;
+	margin-left: 10px;
+	padding: 2px 4px 0 10px;
+}
+.ekomi {
+	background: url("../images/ekomi-logo.jpg") no-repeat scroll 0 0 transparent;
+	height: 73px;
+	position: relative;
+	width: 195px;
+}
+.rating-filter {
+	margin-top: 5px;
+	font-size: 12px;
+}
+.rating-filter a {
+	background: url("../images/bg_arrow-small_right.gif") no-repeat scroll left center transparent;
+	padding-left: 8px;
+	font-size: 11px;
+}
+#detailinfo #comments h3 {
+	color: #596124;
+	font-size: 20px;
+	font-weight: normal;
+}
+#detailinfo #comments .comment_block_title {
+	margin-bottom: 12px;
+}
+#detailinfo #comments .comment_block_title h3 {
+	color: #727B41;
+	font-size: 17px;
+	font-weight: normal;
+}
+.inner_tabs #comments {
+	color: #624D3A;
+	font-size: 14px;
+}
+.inner_tabs #comments .overview_rating .star {
+	margin-top: 2px;
+}
+
+.inner_tabs #comments .overview_rating .star_list {
+	margin-top: 7px;
+	height: 20px;
+}
+
+#detailinfo #comments .comment_block_page .left_container {
+	font-size: 14px;
+	padding-bottom: 6px;
+}
+a.bewertungen {
+	cursor: pointer;
+	font-size: 14px;
+	text-decoration: underline;
+}
+.star {
+	background-image: url("../images/sprite_stars.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 11px;
+	text-indent: -9999px;
+	width: 64px;
+}
+.star0 {
+	background-position: left 0;
+}
+.star1 {
+	background-position: left -11px;
+}
+.star2 {
+	background-position: left -22px;
+}
+.star3 {
+	background-position: left -33px;
+}
+.star4 {
+	background-position: left -44px;
+}
+.star5 {
+	background-position: left -55px;
+}
+.star6 {
+	background-position: left -66px;
+}
+.star7 {
+	background-position: left -77px;
+}
+.star8 {
+	background-position: left -88px;
+}
+.star9 {
+	background-position: left -99px;
+}
+.star10 {
+	background-position: left -110px;
+}
+.star8r {
+	background-position: 13px -110px;
+}
+.star6r {
+	background-position: 26px -110px;
+}
+.star4r {
+	background-position: 39px -110px;
+}
+.star2r {
+	background-position: 52px -110px;
+}
+.chart {
+	background: url("../images/rating-chart-empty.jpg") no-repeat scroll 0 0 transparent;
+	display: block;
+	float: left;
+	height: 30px;
+	padding: 0 9px 4px 0;
+	width: 92px;
+}
+.chart-inner {
+	background: url("../images/rating-chart-full.jpg") no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 19px;
+	width: 92px;
+}
+.count {
+	display: block;
+	float: left;
+	margin-top: 2px;
+	text-align: right;
+	width: 15px;
+}
+.comment_back, .comment_next, .comment_back_dis, .comment_next_dis {
+	display: block;
+	float: left;
+	font-size: 12px;
+}
+
+.guarantee {
+	background: url("../images/ekomi.jpg") no-repeat scroll 0 0 transparent;
+	width: 330px;
+	height: 175px;
+}
+
+.cloud_bg {
+	background: url("../images/cloud.png") no-repeat scroll 0 0 transparent;
+}
+
+.close_quotes {
+	background: url("../images/close_quotes.png") no-repeat scroll 0 0 transparent;
+	width: 16px;
+	height: 16px;
+}
+
+.open_quotes {
+	background: url("../images/open_quotes.png") no-repeat scroll 0 0 transparent;
+	width: 16px;
+	height: 16px;
+	margin-top: -5px;
+}
+
+/* SUPPORTING DIFFERENT TEMPLATES */
+
+#comments .left_overview_container {
+	clear: both;
+	float: left;
+	padding-top: 10px;
+	width: 200px;
+}
+
+.overview_rating > a {
+	display: block;
+	float: left;
+}
+
+#comments .center_overview_container {
+	width: auto;
+}
+
+#comments .overview_rating .star_list {
+	height: 20px;
+	margin-top: 7px;
+}
+#comments .overview_rating strong, #comments .overview_rating .star, #comments .overview_rating span {
+	float: left;
+}
+
+#comments .right_container {
+	float: left;
+	margin-bottom: 10px;
+}
+
+#comments .voteArea {
+	border: none;
+}
+
+#comments h2.headingbox_dark {
+	background: none repeat scroll 0 0 #fff;
+	border: 1px solid #dfdfdf;
+	margin: 0;
+	font-size: 12px;
+	line-height: 35px;
+	padding: 0 15px;
+}
+#comments h2.headingbox_dark span {
+	font-size: 12px;
+}
+#comments > form {
+	background-color: #f5f5f5;
+	border-color: #dfdfdf;
+}
+
+#comments form textarea {
+	width: 425px;
+	height: 150px;
+}
+
+#comments form .buttons {
+	text-align: center;
+}
+
+#comments fieldset input {
+	width: 240px;
+}
+
+#comments form label {
+	display: block;
+	float: left;
+	margin-top: 8px;
+	width: 180px;
+}
+
+#comments .clear {
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	height: 1px;
+	line-height: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 0;
+}
+
+#comments .left_container {
+	float: left;
+	width: 140px;
+}
+
+#comments form {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #dfdfdf;
+	border-image: none;
+	border-style: none solid solid;
+	border-width: 0 1px 1px;
+	padding: 10px;
+}
+
+/* CONFIRM PAGE EKOMI OPT-IN CHECKBOX */
+/* Bei Darstellungsproblemen auf der Confirm-Page bitte die Werte in left und top entsprechend anpassen */
+/* Achtung - ihre Anpassungen werden bei jedem Update ueberschrieben */
+/* ekomi checkbox container */
+.ekomi_confirm_checkbox{
+	left: 37px; 
+	position: absolute; 
+	top: 100px;
+}
+
+/* ekomi checkbox input field */
+.ekomi_confirm_checkbox .ekomi_confirm_checkbox_input{
+	display: block; 
+	float: left; 
+	margin: 2px;
+}
+
+/* ekomi checkbox text */
+.ekomi_confirm_checkbox .ekomi_confirm_checkbox_label{
+	display: block; 
+	margin-left: 21px; 
+	padding-top: 3px;
+}

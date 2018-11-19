@@ -1,0 +1,215 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2015, 4:14:11 PM
+    Author     : Karen
+*/
+
+.ekomi-widget-wrapper{
+    text-align: center;
+    .unitize-padding(15,0,15,0);
+    .ekomi-widget-cont{
+        display: inline-block;
+    }
+}
+
+.ekomi-header-seal {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    .unitize-width(45);
+    z-index: 5000;
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+    .ekomi-header-seal{
+        right: 155px;
+        .unitize-width(70);
+    }
+}
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+    .ekomi-header-seal{
+        right: 315px;
+    }
+}
+
+.product--ekomi-average-rating{
+    h3{
+        .product--rating{
+            .unitize-margin(0,0,0,0);
+            display: inline-block;
+        }
+    }
+}
+.product--ekomi-box{
+    .unitize-margin(10,0,10,0);
+    .product--ekomi-ratings{
+        .unitize-margin(0,50,0,0);
+        display: inline-block;
+        .product--rating {
+            display: table;
+            .unitize-margin(5,0,5,0);
+            .product--ekomi-star-cont{
+                .unitize-width(125);
+                display: inline-block;
+            }
+            .product--ekomi-percent-cont{
+                .unitize-width(125);
+                .unitize-height(25);
+                .box-shadow(inset 0 1px 1px @gray-dark);
+                .unitize(5, 16, top);
+                .unitize-margin(0,5,0,5);
+                background: @input-bg;
+                border: 1px solid @input-border;
+                border-top-color: darken(@input-border, 5%);
+                display: inline-block;
+                position: relative;
+                .product--ekomi-percent{
+                    display: inline-block;
+                    background-color: @rating-star-color;
+                    position: absolute;
+                    .unitize-height(23);
+                }
+            }
+        }
+    }
+    .product--ekomi-widget{
+        display: inline-block;
+        .product--ekomi-widget-link{
+            display: block;
+            background-image: url(../img/ekomi.jpg);
+            .unitize-width(330);
+            .unitize-height(175);
+        }
+    }
+}
+.review--entry {
+    &.has--answer {
+        .unitize-margin(0,0,25,0);
+    }
+    
+}
+.ekomi--comments-vote-area-cont{
+    .unitize-margin(0,0,20,0);
+    .hidden{
+        display: none;
+    }
+    .ekomi--comments-vote-area{
+       .ekomi--comments-vote-area-button{
+           &.ekomi--comments-vote-area-button-yes{
+               color: darken(@highlight-success, 15%);
+               i{
+                   .unitize-margin(0,5,0,5);
+                   .unitize-padding(5,5,5,5);
+                    background: @highlight-success;
+                    color: #fff;
+               }
+               &:hover{
+                   i{
+                      background: darken(@highlight-success, 15%);
+                   }
+               }
+           }
+           &.ekomi--comments-vote-area-button-no{
+               color: darken(@highlight-error, 15%);
+               i{
+                   .unitize-margin(0,5,0,5);
+                   .unitize-padding(5,5,5,5);
+                    background: @highlight-error;
+                    color: #fff;
+               }
+               &:hover{
+                   i{
+                      background: darken(@highlight-error, 15%); 
+                   }
+               }
+           }
+           
+           
+       } 
+    }
+    b{
+        color: @brand-primary;
+    }
+    
+}
+.ekomi-rating-filter{
+    &.hidden{
+        display: none;
+    }
+    span{
+        .unitize-margin(0, 5, 0, 0);
+    }
+}
+
+.ekomi--vs-rating-area{
+    .unitize-margin(15,0,25,0);
+    .ekomi--vs-rating-area-heading{
+        .unitize-padding(10, 0, 10, 0);
+        background-color: @brand-primary;
+        .ekomi--vs-rating-area-heading-title{
+            color: #fff;
+            width: calc(~"50% - 2px");
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    .ekomi--vs-rating-area-content{
+        border-bottom: 1px dashed @brand-secondary;
+        border-left: 1px dashed @brand-secondary;
+        border-right: 1px dashed @brand-secondary;
+        .unitize(250, 16, min-height);
+        position: relative;
+        .ekomi--vs-rating-area-review-block{
+            .unitize-padding(10, 25, 15, 25);
+            width: calc(~"50% - 2px");
+            display: inline-block;
+            text-align: left;
+        }
+        .icon--star{
+            color: @rating-star-color;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            .unitize-width(0);
+            border-right: 1px dashed @brand-secondary;
+            .translate(-50%, 0);
+        }
+        &:after{
+            content: "Vs";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: @brand-primary;
+            .translate(-50%, -50%);
+            .unitize(40, 16, font-size);
+            font-weight: @font-bold-weight;
+        }
+        .ekomi--vs-rating-area-review-stat{
+            b{
+                color: @brand-primary;
+            }
+        }
+        .ekomi--vs-rating-area-review-author-from{
+            .name{
+                color: @brand-primary;
+            }
+        }
+    }
+    
+}
+.ekomi-filter-action{
+    .product--rating{
+        .unitize-margin(0, 0, 10, 0);
+    }
+}
+.content--wrapper .sidebar-main {
+  display: block;
+}
