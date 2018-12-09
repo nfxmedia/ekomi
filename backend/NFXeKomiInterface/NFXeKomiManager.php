@@ -376,6 +376,7 @@ class NFXeKomiManager {
                   nfx_ekomi_orders.`ekomi_link`,
                   ub.`salutation`,
                   ub.`firstname`,
+                  s_user.`subshopID`,
                   ub.`lastname` 
                   $selectAttr 
                 FROM
@@ -401,6 +402,7 @@ class NFXeKomiManager {
 
         $sql = "SELECT email FROM nfx_ekomi_blacklist;";
         $blacklist = Shopware()->db()->fetchAll($sql);
+        $snippets = Shopware()->Snippets();
 
         foreach ($orders as $order) {
             try {
@@ -421,12 +423,9 @@ class NFXeKomiManager {
                 $orderData["firstname"] = $order["firstname"];
                 $orderData["lastname"] = $order["lastname"];
                 $orderData["link"] = $order["ekomi_link"];
-                $orderData["salutation"] = "";
-                if (strtolower($order["salutation"]) == "mr") {
-                    $orderData["salutation"] = "Herr";
-                } elseif (strtolower($order["salutation"]) == 'ms' || strtolower($order["salutation"]) == 'mrs') {
-                    $orderData["salutation"] = "Frau";
-                }
+                $snippets->setShop(Shopware()->Models()->find(\Shopware\Models\Shop\Shop::class, (int) $orderData["subshopID"]));
+                $salutations = $snippets->getNamespace("frontend/salutation");
+                $orderData["salutation"] = $salutations->get(strtolower($order["salutation"]), $salutations->get("mr"));
 
                 $this->sendEmail($orderData);
 
